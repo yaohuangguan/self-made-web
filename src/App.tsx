@@ -1,12 +1,9 @@
-import './App.css';
-import React from 'react';
-import { Button } from 'antd'
+import React from "react";
+import renderAppRoutes, { routes } from "./routes";
+import { ContextProvider } from "./context/provider";
 
+const AppController = (props) => {
+  return <ContextProvider>{renderAppRoutes(routes)}</ContextProvider>;
+};
 
-function App() {
-  return (
-    <Button>你好</Button>
-  );
-}
-
-export default App;
+export default AppController;

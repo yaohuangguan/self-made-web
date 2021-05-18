@@ -1,0 +1,3 @@
+export const THEME_MODE_CHANGE = 'THEME_MODE_CHANGE';
+
+export const LANG_CHANGE = 'LANG_CHANGE';
